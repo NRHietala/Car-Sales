@@ -28,11 +28,11 @@ const App = (props) => {
 };
 
 const mapStateToProps = state => {
-  additionalPrice: state.additionalPrice,
-  car: state.car,
-  additionalFeatures:state.additionalFeatures
+  return {
+    additionalPrice: state.additionalPrice,
+    car: state.car,
+    additionalFeatures: state.additionalFeatures
+  }
 }
 
-
-// export default App;
-export default connect(mapStateToProps, {addFeature, removeFeature})(App);
+export default connect(mapStateToProps, { addFeature, removeFeature })(App);

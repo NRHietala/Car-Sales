@@ -1,12 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
 import AddedFeature from './AddedFeature';
-import { addFeature } from '../actions/carActions';
 
 const AddedFeatures = props => {
-
-  console.log(props)
   return (
     <div className="content">
       <h6>Added features:</h6>
@@ -16,7 +11,7 @@ const AddedFeatures = props => {
             <AddedFeature
             key={item.id}
             feature={item}
-            onClick={props.addFeature(item.id)}
+            removeFeature={props.removeFeature}
             />
           ))}
         </ol>
