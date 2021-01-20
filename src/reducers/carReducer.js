@@ -1,5 +1,5 @@
 
-import { ADD_FEATURE, REMOVE_FEATURE, INCREASE_TOTAL, DECREASE_TOTAL } from '../actions/carActions';
+import { ADD_FEATURE, REMOVE_FEATURE} from '../actions/carActions';
 
 
 export const initialState = {
